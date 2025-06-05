@@ -1,0 +1,359 @@
+.projects-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 1512px;
+  	height: 116px;
+}
+.home {
+  	position: absolute;
+  	top: 44px;
+  	left: 1008px;
+  	font-size: 24px;
+}
+.cv {
+  	position: absolute;
+  	top: 44px;
+  	left: 1185px;
+  	font-size: 24px;
+}
+.projects1 {
+  	position: absolute;
+  	top: 44px;
+  	left: 1329px;
+  	font-size: 24px;
+  	color: #535353;
+}
+.my-projects {
+  	position: absolute;
+  	top: 199px;
+  	left: 178px;
+  	font-size: 60px;
+  	color: #606060;
+  	display: inline-block;
+  	width: 386px;
+}
+.my-previous-design {
+  	position: absolute;
+  	top: 296px;
+  	left: 178px;
+  	font-size: 20px;
+  	line-height: 128.35%;
+  	color: #606060;
+  	text-align: justify;
+  	display: inline-block;
+  	width: 295px;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 39px;
+  	background-color: #fff;
+  	border: 2px solid #476c77;
+  	box-sizing: border-box;
+  	width: 539px;
+  	height: 466px;
+}
+.carelab-collective {
+  	position: absolute;
+  	top: 337.14px;
+  	left: 38.65px;
+  	font-size: 25px;
+  	line-height: 128.35%;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 225.5px;
+  	height: 33.3px;
+}
+.ux-design {
+  	position: absolute;
+  	top: 368.28px;
+  	left: 38.65px;
+  	line-height: 128.35%;
+  	color: #a2a2a2;
+  	display: inline-block;
+  	width: 225.5px;
+  	height: 19.3px;
+}
+.collaborated-with-carelab {
+  	position: absolute;
+  	top: 402.64px;
+  	left: 38.65px;
+  	letter-spacing: -0.01em;
+  	line-height: 128.35%;
+  	color: #606060;
+  	text-align: left;
+  	display: inline-block;
+  	width: 459.5px;
+  	height: 32.2px;
+}
+.group-1-1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 39px 39px 0px 0px;
+  	width: 539px;
+  	height: 321px;
+  	object-fit: cover;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 399.01px;
+  	left: 164px;
+  	width: 539px;
+  	height: 466px;
+  	text-align: justify;
+  	color: #476c77;
+}
+.group-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 39px;
+  	background-color: #fff;
+  	border: 2px solid #7054a0;
+  	box-sizing: border-box;
+  	width: 539px;
+  	height: 466px;
+}
+.leco-language-exchange {
+  	position: absolute;
+  	top: 339.3px;
+  	left: 38.65px;
+  	font-size: 25px;
+  	line-height: 128.35%;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 443.5px;
+  	height: 32.2px;
+}
+.ux-design1 {
+  	position: absolute;
+  	top: 368.29px;
+  	left: 38.65px;
+  	line-height: 128.35%;
+  	color: #a2a2a2;
+  	display: inline-block;
+  	width: 225.5px;
+  	height: 19.3px;
+}
+.an-application-which {
+  	position: absolute;
+  	top: 402.65px;
+  	left: 38.65px;
+  	letter-spacing: -0.01em;
+  	line-height: 128.35%;
+  	color: #606060;
+  	text-align: left;
+  	display: inline-block;
+  	width: 459.6px;
+  	height: 32.2px;
+}
+.leco-logo-1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 39px 39px 0px 0px;
+  	width: 539px;
+  	height: 317.8px;
+  	object-fit: cover;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 399px;
+  	left: 808px;
+  	width: 539px;
+  	height: 466px;
+  	text-align: justify;
+  	color: #552aad;
+}
+.group-inner {
+  	position: absolute;
+  	top: 0px;
+  	left: 1.08px;
+  	border-radius: 39px;
+  	background-color: #fff;
+  	border: 2px solid #3a5aaa;
+  	box-sizing: border-box;
+  	width: 542.5px;
+  	height: 469px;
+}
+.sleep-better {
+  	position: absolute;
+  	top: 339.32px;
+  	left: 39.98px;
+  	font-size: 25px;
+  	line-height: 128.35%;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 226.9px;
+  	height: 33.5px;
+}
+.instructional-design {
+  	position: absolute;
+  	top: 370.66px;
+  	left: 39.98px;
+  	line-height: 128.35%;
+  	color: #a2a2a2;
+  	display: inline-block;
+  	width: 226.9px;
+  	height: 19.5px;
+}
+.to-address-the {
+  	position: absolute;
+  	top: 405.24px;
+  	left: 39.98px;
+  	letter-spacing: -0.01em;
+  	line-height: 128.35%;
+  	color: #606060;
+  	text-align: left;
+  	display: inline-block;
+  	width: 462.5px;
+  	height: 32.4px;
+}
+.sleep101-1-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 39px 39px 0px 0px;
+  	width: 542.5px;
+  	height: 317.7px;
+  	object-fit: cover;
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 943px;
+  	left: 164px;
+  	width: 543.6px;
+  	height: 469px;
+  	text-align: justify;
+  	color: #1c3d84;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 39px;
+  	background-color: #fff;
+  	border: 2px solid #07442d;
+  	box-sizing: border-box;
+  	width: 537.9px;
+  	height: 469px;
+}
+.greenie {
+  	position: absolute;
+  	top: 339.32px;
+  	left: 38.58px;
+  	font-size: 25px;
+  	line-height: 128.35%;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 225px;
+  	height: 33.5px;
+}
+.ux-design2 {
+  	position: absolute;
+  	top: 370.66px;
+  	left: 38.58px;
+  	line-height: 128.35%;
+  	color: #a2a2a2;
+  	display: inline-block;
+  	width: 225px;
+  	height: 19.5px;
+}
+.to-address-the1 {
+  	position: absolute;
+  	top: 405.24px;
+  	left: 38.58px;
+  	letter-spacing: -0.01em;
+  	line-height: 128.35%;
+  	color: #606060;
+  	text-align: left;
+  	display: inline-block;
+  	width: 458.6px;
+  	height: 32.4px;
+}
+.sleep101-1-icon1 {
+  	position: absolute;
+  	top: 2px;
+  	left: 1.93px;
+  	border-radius: 37px 37px 0px 0px;
+  	width: 534.5px;
+  	height: 316px;
+  	object-fit: cover;
+}
+.group-div {
+  	position: absolute;
+  	top: 943px;
+  	left: 809.07px;
+  	width: 537.9px;
+  	height: 469px;
+  	text-align: justify;
+  	color: #07442d;
+}
+.group-child1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 1512px;
+  	height: 138px;
+}
+.feel-free-to {
+  	position: absolute;
+  	top: 36px;
+  	left: 94px;
+  	display: inline-block;
+  	width: 202px;
+  	height: 23px;
+}
+.logo-instagram-icon {
+  	position: absolute;
+  	top: 76px;
+  	left: 141px;
+  	width: 24px;
+  	height: 24px;
+  	overflow: hidden;
+}
+.mail-icon {
+  	position: absolute;
+  	top: 74px;
+  	left: 94px;
+  	width: 28px;
+  	height: 28px;
+}
+.vector-icon {
+  	position: absolute;
+  	top: 76px;
+  	left: 183px;
+  	width: 24px;
+  	height: 24px;
+}
+.by-yuxing-chen {
+  	position: absolute;
+  	top: 57px;
+  	left: 1226px;
+  	font-weight: 300;
+  	color: #606060;
+}
+.rectangle-parent1 {
+  	position: absolute;
+  	top: 1543px;
+  	left: 0px;
+  	width: 1512px;
+  	height: 138px;
+  	font-size: 20px;
+}
+.projects {
+  	width: 100%;
+  	position: relative;
+  	background-color: #fff;
+  	height: 1681px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 14px;
+  	color: #373737;
+  	font-family: Roboto;
+}
