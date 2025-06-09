@@ -22,6 +22,20 @@
     left: 1329px;
     color: #535353;
 }
+
+/* Reset the link style. */
+.home, .cv, .projects {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.home:hover,
+.cv:hover,
+.projects:hover {
+  font-weight: bold;
+}
+
 .hi-im-yuxing {
     position: absolute;
     top: 403px;
