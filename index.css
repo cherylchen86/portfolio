@@ -38,6 +38,8 @@ body, html {
   height: auto;
   border-radius: 8px;
   margin-right: 40px;
+  align-self: center;
+   transform: translateY(-15px);
 }
 
 .text-group {
@@ -75,11 +77,12 @@ body, html {
 }
 
 .personalDescription {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   margin-top: 15px;
   line-height: 1.4;
   color: #45423D;
+  margin-bottom: 1em;
 }
 
 /*WORK*/
@@ -87,6 +90,7 @@ body, html {
   padding: 80px 97px;
   box-sizing: border-box;
   color: #45423D;
+  margin-top: -40px;
 }
 
 .section-title {
@@ -101,14 +105,15 @@ body, html {
   gap: 60px 40px;
 }
 
+/*容器*/
 .project-card {
   display: flex;
   flex-direction: column;
 }
 
 .project-image {
-  width: 510px;
-  height: 302px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   max-width: 100%;
 }
@@ -134,4 +139,119 @@ body, html {
   font-weight: 400;
   color: #333;
   margin: 0;
+}
+
+/*About Me Section*/
+.about-me-section {
+  padding: 80px 97px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #45423D;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 图片和文字顶对齐 */
+  gap: 60px;
+}
+
+.about-image-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-photo {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.photo-caption {
+  font-size: 14px;
+  color: #888;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  color: #45423D;
+  margin-bottom: 20px;
+}
+
+.about-text .section-title {
+  margin-top: 0;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* CONTACT */
+.contact-section {
+  padding: 80px 97px;
+  background-color: #fdfdfd;
+  text-align: left;
+}
+
+.contact-container {
+  margin: 0 auto;
+}
+
+.contact-header {
+  display: flex;
+  align-items: baseline;
+  gap: 20px; /* 控制标题和副标题的间距 */
+  flex-wrap: wrap; /* 小屏时自动换行 */
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  gap: 30px;
+}
+
+.contact-chip {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.contact-chip.email {
+  background: linear-gradient(to right, #FFA939, #FB84A7);
+}
+
+.contact-chip.phone {
+  background: linear-gradient(to right, #5DADEC, #7AB5B0);
+}
+
+.contact-chip.linkedin {
+  background: linear-gradient(to right, #C6C8EE, #FFC9B3);
+}
+
+.contact-chip:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
 }
