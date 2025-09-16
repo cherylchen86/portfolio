@@ -1,0 +1,413 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* MENU */
+.menu-buttons {
+  position: fixed;
+  top: 20px;
+  right: 3%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  opacity: 1;
+}
+
+.menu-buttons.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #8A8A8A;
+  background-color: white;
+  border: 2px solid #B8B8B8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #FFBE3C;
+  color: white;
+  border-color: #FFBE3C;
+}
+
+/* Typography Utility Classes */
+.bigtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 600;  /* semibold */
+  color: #45423D;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 500;  /* medium */
+  color: #45423D;
+}
+
+.highlight {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 500;  /* medium */
+  color: #07442D;
+}
+
+.para {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;  /* regular */
+  color: #45423D;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+/* 通用区块 */
+.section {
+  padding: 60px 0;
+}
+
+.divider {
+  width: 84vw;            /* 宽度略大于 container（950） */
+  max-width: calc(100% - 96px); /* 防止在小屏下溢出 */
+  height: 1px;
+  background-color: #606060;
+  margin: 40px auto;        /* 垂直间距 & 居中 */
+}
+
+/* Hero */
+.hero-section {
+  width: 100%;
+  background-color: #f0f8f4; /* 可选背景色，或替换为 background-image */
+}
+
+.hero-img {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+/* 全宽纯色区块 */
+.full-width-section {
+  width: 100%;
+  background-color: #f8f9f5;
+  padding: 40px 0;
+}
+
+/* OVERVIEW */
+.overview-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px; /* 可调整 */
+  align-items: flex-start;
+  flex-wrap: wrap; /* 保证在小屏时可以换行 */
+}
+
+.overview-left {
+  flex: 1 1 60%;
+}
+
+.overview-right {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.right-block .para {
+  font-size: 18px;
+}
+
+/* Context */
+.context-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: -20px;
+}
+
+.problem-cards {
+  display: flex;
+  justify-content: space-between; /* 把第一张推左边，最后一张推右边 */
+  align-items: flex-start;
+  gap: 0; /* gap 不控制它们之间的间距 */
+  flex-wrap: nowrap;
+}
+
+.problem-cards img {
+  width: calc((100% - 48px) / 3); /* 计算剩下三张图的宽度（假设两边间距为 24px*2） */
+  height: auto;
+  display: block;
+}
+
+/* HMW */
+.design-question {
+  width: 100%;
+  background-color: #07442D;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.emoji-img {
+  width: 10vw;
+  height: 10vh;
+  object-fit: contain;
+}
+
+.white-text {
+  color: #fff;
+}
+
+/* Audience */
+.audience-section {
+  padding-top: 90px;
+}
+
+.audienceDesc {
+  margin-top: 30px;
+}
+
+.user-needs-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.needs-left {
+  flex: 1 1 50%;
+}
+
+.userneedstitle {
+  margin-top: 30px;
+}
+
+.needs-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 5px;
+}
+
+.needs-text {
+  flex: 1 1 40%;
+  margin-top: 25px;
+}
+
+.needs-summary {
+  padding-left: 1.5em;
+  margin-top: 15px;
+}
+
+.needs-summary li {
+  margin-bottom: 15px;
+}
+
+.needs-summary li::marker {
+  color: #FFA939;
+}
+
+/* USER JOURNEY MAP*/
+.UJMtitle {
+  margin-top: 70px;
+}
+
+.UJMpara {
+  margin-top: 15px;
+}
+
+.top-gap {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.journey-map-img {
+  margin-top: 32px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.afteraudiencedivider{
+  margin-top: 80px;
+}
+
+/* LANDSCAPE AUDITS*/
+.landscape-section {
+  margin-top: 80px;
+}
+
+.LAtitle {
+  margin-bottom: 30px;
+}
+
+.landscape-para {
+  margin-top: 16px;
+}
+
+.bullet-orange {
+  list-style: disc;
+  padding-left: 1.5em; /* 留出 marker 空间 */
+  margin-top: 24px; /* 可按需调整与上方间距 */
+}
+
+.bullet-orange li {
+  margin-bottom: 15px;
+}
+
+.bullet-orange li::marker {
+  color: #FFA939;
+}
+
+.afterLAdivider {
+  margin-top: 60px;
+}
+
+/* Design Process */
+.DesignProcess {
+  margin-top: 20px;
+}
+
+.section-title {
+  margin-bottom: 8px;
+}
+
+.sub-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.lofi-image {
+  width: 100%;          /* 填满 container */
+  height: auto;         /* 保持长宽比 */
+  display: block;
+}
+
+.UBTESTtitle {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.UBTEST {
+  width: 100%;          /* 填满 container */
+  height: auto;         /* 保持长宽比 */
+  display: block; 
+}
+
+.iterations {
+  margin-top: 70px;
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+/* Divider */
+.afterDesignProcessDivider {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* FINAL DESIGN */
+.FinalDesign {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.greenieInterface {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.tryThePrototype {
+  width:100%;
+}
+
+/* REFLECTION */
+.RFpara1 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.RFpara2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* COMMENTS */
+.commentcards {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Footer */
+.backtotop {
+  display: block;
+  width: 5vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.contact-chip {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.contact-chip.email {
+  background: linear-gradient(to right, #FFA939, #FB84A7);
+}
+
+.contact-chip.phone {
+  background: linear-gradient(to right, #5DADEC, #7AB5B0);
+}
+
+.contact-chip.linkedin {
+  background: linear-gradient(to right, #C6C8EE, #FFC9B3);
+}
+
+.contact-chip:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
