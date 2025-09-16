@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenie</title>
+  <link rel="stylesheet" href="greenie.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Menu -->
+  <div id="menu-buttons" class="menu-buttons hidden">
+    <a href="index.html" class="menu-button">WORK</a>
+  </div>
+  <script src="greenie.js"></script>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <img src="media/greenie/greenieHero.png" alt="Greenie Hero" class="hero-img">
+  </section>
+
+  <!-- Overview -->
+<section class="section">
+  <div class="container overview-layout">
+    
+    <!-- 左边：Overview -->
+    <div class="overview-left">
+      <h2 class="title">OVERVIEW</h2>
+      <p class="para">
+        <span class="highlight">Greenie</span>  is a mobile app designed to help novice and intermediate plant owners build sustainable plant care routines. This project was not only my capstone thesis project at NYU’s Learning Technology and Experience Design, but also a full-cycle solo UX initiative— from user research to testing — carried out over 9 months.
+      </p>
+    </div>
+
+    <!-- 右边：Duration & Role -->
+    <div class="overview-right">
+      <div class="right-block">
+        <h3 class="title">DURATION</h3>
+        <p class="para">09/2024 – 05/2025 (9 months)</p>
+      </div>
+      <div class="right-block">
+        <h3 class="title">MY ROLE</h3>
+        <p class="para">UX researcher & designer</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- 分割线 -->
+  <div class="divider"></div>
+
+  <!-- Context -->
+<section class="section">
+  <div class="container context-section">
+    <h2 class="bigtitle">CONTEXT</h2>
+
+    <p class="para">
+      As a <span class="highlight">plant owner</span>, I care about plants’ health and would like to promote a <span class="highlight">green lifestyle</span>.
+      Talking to people, I realize there’re multiple challenges people face when tending plants. So I did some research. Desk research shows that houseplant ownership is on the rise, but many novice and intermediate plant owners struggle to keep their plants alive.
+      Through my surveys (n=45) and interviews (n=4), I identified three core problems:
+    </p>
+
+    <div class="problem-cards">
+      <img src="media/greenie/problem1.png" alt="Problem 1">
+      <img src="media/greenie/problem2.png" alt="Problem 2">
+      <img src="media/greenie/problem3.png" alt="Problem 3">
+    </div>
+  </div>
+</section>
+
+  <!-- HMW -->
+  <section class="design-question">
+    <div class="container">
+      <img src="media/greenie/Thinking Face.png" alt="Thinking emoji" class="emoji-img">
+      <p class="title white-text">How might we create an engaging and motivational plant care experience?</p>
+    </div>
+  </section>
+
+
+  <!-- Audience -->
+  <section class="audience-section">
+    <div class="container">
+
+      <!-- ① Audience 段落 -->
+      <h2 class="bigtitle">AUDIENCE</h2>
+      <p class="para audienceDesc">
+        Based on the survey, The target audience of this design project are novice and intermediate plant owners. They prefer visually engaging content, and are often short on time or unsure how to diagnose plant problems.
+      </p>
+
+      <!-- ② + ③ 两列布局：User Needs -->
+      <div class="user-needs-row">
+        <!-- 左侧：标题 + 图 -->
+        <div class="needs-left">
+          <h2 class="userneedstitle title">USER NEEDS</h2>
+          <img src="media/greenie/userNeeds.png" alt="User needs affinity map" class="needs-image">
+        </div>
+
+        <!-- 右侧：段落 + bullet list -->
+        <div class="needs-text">
+          <p class="para">
+            I organized the the survey data and the interview insights into an affinity map.
+            From it we know that plant owners expect a platform that:
+          </p>
+          <ul class="needs-summary para">
+            <li>Offers clear and detailed guidance for plant care.</li>
+            <li>Provides an easier way to set up plant care reminders.</li>
+            <li>Delivers specific tips on diagnosing plants’ issues.</li>
+            <li>Gives stimulation for motivations to tender plants.</li>
+            <li>Fosters a community where users share and ask for help.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ④ Journey Map 标题 -->
+      <h2 class="UJMtitle title">USER JOURNEY MAP</h2>
+      <p class="UJMpara para">
+        I also mapped out a typical user journey to understand where pain points and opportunities lie across the plant care experience. <br/>
+        <span class="top-gap">Meet Amber, a novice plant owner. This journey illustrates her emotional and cognitive states from discovering a plant to building a consistent care routine.</span>
+      </p>
+      <img src="media/greenie/userJourneyMap.png" alt="User Journey Map" class="journey-map-img">
+
+    </div>
+  </section>
+
+  <!-- 分割线 -->
+  <div class="afteraudiencedivider divider"></div>
+
+  <!-- LANDSCAPE AUDITS -->
+  <section class="landscape-section">
+    <div class="container">
+      <h2 class="LAtitle bigtitle">LANDSCAPE AUDITS</h2>
+      <p class="para">
+        There are multiple general ways to record plant growth and manage plants. They include a combination of memory and visual cues, manual records, and digital tools. For the digital tools of plant care, there are some solutions in the market. The three most used ones are: Planta, Blossom, PlantNet.
+      </p>
+      <p class="para landscape-para">
+        After comparing the three major plant care apps—Planta, Blossom, and Plantum—several gaps in their features and user experience stand out.
+      </p>
+      <ul class="para bullet-orange">
+        <li>Community features are generally underdeveloped.</li>
+        <li>The diagnosis tools across the platforms rely almost exclusively on photo input.</li>
+        <li>Lack of search and preview in learning content, making navigation inefficient.</li>
+        <li>Weather integration is weak or absent.</li>
+        <li>No calendar-based reminder view.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 分割线 -->
+  <div class="afterLAdivider divider"></div>
+
+  <!-- Design Process -->
+  <section class="DesignProcess">
+    <div class="container">
+      <h2 class="section-title bigtitle">Design Process</h2>
+      <h3 class="sub-title title">LOW-FI PROTOTYPE</h3>
+      <img src="media/greenie/lowFi.png" alt="Low-Fidelity Prototype Full View" class="lofi-image">
+      <h3 class="UBTESTtitle title">USABILITY TESTING</h3>
+      <img src="media/greenie/UBTEST.png" alt="Usability Testing" class="UBTEST">
+      <img src="media/greenie/Iterations.png" alt="Iterations" class="iterations">
+    </div>
+  </section>
+
+  <!-- 分割线 -->
+  <div class="afterDesignProcessDivider divider"></div>
+
+  <!-- FINAL DESIGN -->
+   <section class="FINALDESIGN">
+      <div class="container">
+        <h1 class="FinalDesign bigtitle">FINAL DESIGN</h1>
+        <h2 class="title">INTERFACE</h2>
+        <img src="media/greenie/Interface.png" alt="Interface Screenshots" class="greenieInterface">
+      </div>
+
+      <a href="https://www.figma.com/proto/Rm8myy980ITzA6D7aOa0hR/Greenie?page-id=273%3A2828&node-id=273-4052&viewport=658%2C457%2C0.25&t=Ir77IQx8awi1M3pc-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=273%3A4052&show-proto-sidebar=1" target="_blank">
+        <img src="media/greenie/tryThePrototype.png" alt="Try the prototype" class="tryThePrototype">
+      </a>
+   </section>
+
+  <!-- 分割线 -->
+  <div class="afterFinalDesignDivider divider"></div>
+
+  <!-- REFLECTION -->
+   <section class="REFLECTION">
+      <div class="container">
+        <h1 class="reflectiontitle bigtitle">REFLECTION</h1>
+        <p class="RFpara1 para">This 9-month project allowed me to demonstrate full-cycle UX design skills from user research to testing. And it strengthened my ability to work independently and iteratively in solving real user problems.</p>
+        <p class="RFpara2 para">While some features like avatar-based interaction weren’t fully implemented, the final design addresses core user needs and demonstrates my skills in full-cycle UX design. Also, plant care extends beyond the elements shown in the prototype. Looking ahead, I’m excited to further explore the intersection of technology and human-nature interaction.</p>
+      </div>
+   </section>
+
+  <!-- 分割线 -->
+  <div class="afterReflectionDivider divider"></div>
+
+  <!-- COMMENTS -->
+   <section class="comments">
+      <div class="container">
+        <h1 class="commentstitle bigtitle">COMMENTS</h1>
+        <img src="media/greenie/comments.png" alt="comments from others" class="commentcards">
+      </div>
+   </section>
+
+  <!-- Footer -->
+   <section class="footer">
+      <div class="container">
+        <img src="media/greenie/backToTop.png" alt="back to top" class="backtotop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <div class="contact-buttons">
+          <a href="mailto:cheryl.yx.chen@outlook.com" class="contact-chip email">cheryl.yx.chen@outlook.com</a>
+          <a href="tel:+19292920157" class="contact-chip phone">+1 929-292-0157</a>
+          <a href="https://www.linkedin.com/in/yuxingchen86/" target="_blank" rel="noopener noreferrer" class="contact-chip linkedin">LinkedIn</a>
+        </div>
+      </div>
+   </section>
+</body>
+</html>
