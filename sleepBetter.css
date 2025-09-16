@@ -1,0 +1,375 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #FAFAFA;
+}
+
+/* MENU */
+.menu-buttons {
+  position: fixed;
+  top: 20px;
+  right: 3%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  opacity: 1;
+}
+
+.menu-buttons.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #8A8A8A;
+  background-color: white;
+  border: 2px solid #B8B8B8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #FFBE3C;
+  color: white;
+  border-color: #FFBE3C;
+}
+
+/* Typography Utility Classes */
+.bigtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 600;  /* semibold */
+  color: #45423D;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 500;  /* medium */
+  color: #45423D;
+}
+
+.highlight {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 500;  /* medium */
+  color: #FB84A7;
+}
+
+.para {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;  /* regular */
+  color: #45423D;
+  line-height: 1.5;
+}
+
+.text-black {
+    color: #45423D !important;
+}
+
+/* General setting */
+.container {
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.divider {
+  width: 84vw;            /* 宽度略大于 container（950） */
+  max-width: calc(100% - 96px); /* 防止在小屏下溢出 */
+  height: 1px;
+  background-color: #74716b;
+  margin: 60px auto;        /* 垂直间距 & 居中 */
+}
+
+/* Hero */
+.hero-section {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.hero-img {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+/* 全宽纯色区块 */
+.full-width-section {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 40px 0;
+}
+
+/* OVERVIEW */
+.overview-layout {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px; /* 可调整 */
+  align-items: flex-start;
+  flex-wrap: wrap; /* 保证在小屏时可以换行 */
+}
+
+.overview-left {
+  flex: 1 1 60%;
+}
+
+.overview-right {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.right-block .para {
+  font-size: 18px;
+}
+
+/* stage 1 */
+.h101 {
+  margin-top: 30px;
+}
+
+.RM {
+  width: 100%;
+}
+
+.h102 {
+  margin-top: 5px;
+}
+
+.p103 {
+  margin-top: 5px;
+}
+
+.p104 {
+  margin-top: 25px;
+}
+
+.problems {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.h103 {
+  margin-top: 32px;
+}
+
+.quotes {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.h104 {
+  margin-top: 40PX;
+}
+
+.p105 {
+  margin-top: 8PX;
+}
+
+.h106 {
+  margin-top: 20PX;
+}
+
+.learnerChara {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.h107 {
+  margin-top: 0px;
+}
+
+.personas {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.h108 {
+  margin-top: 30px;
+}
+
+.p109 {
+  margin-top: 5px;
+}
+
+.h110 {
+  margin-top: 12px;
+}
+
+.keyTasks {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.h111 {
+  margin-top: 30px;
+}
+
+.h112 {
+  margin-top: 5px;
+}
+
+.u113 {
+  list-style: none;
+}
+
+.u113 li {
+  position: relative;
+  margin-top: 5px;
+}
+
+.u113 li::before {
+  content: "•  ";
+  left: 0;
+  color: #45423D;
+}
+
+.h114 {
+  margin-top: 20px;
+}
+
+.objectives {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.h115 {
+  margin-top: 25px;
+}
+
+.p116 {
+  margin-top: 5px;
+}
+
+.designIM {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.h117 {
+  margin-top: -5px;
+}
+
+.h118 {
+  margin-top: 10px;
+}
+
+.p119 {
+  margin-top: 10px;
+}
+
+.p120 {
+  margin-top: 10px;
+}
+
+.p121 {
+  margin-top: 10px;
+}
+
+.h122 {
+  margin-top: 25px;
+}
+
+.lowFi {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.h123 {
+  margin-top: 20px;
+}
+
+.logicModel {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.h125 {
+  margin-top: -5px;
+}
+
+.h126 {
+  margin-top: 20px;
+}
+
+.hiFi {
+  width: 100%;
+  margin-top: 5px;
+  margin-left: -6rem;
+}
+
+.divider1 {
+  margin-top: -2rem;
+}
+
+.comments {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.backtotop {
+  display: block;
+  width: 4vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.contact-chip {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.contact-chip.email {
+  background: linear-gradient(to right, #FFA939, #FB84A7);
+}
+
+.contact-chip.phone {
+  background: linear-gradient(to right, #5DADEC, #7AB5B0);
+}
+
+.contact-chip.linkedin {
+  background: linear-gradient(to right, #C6C8EE, #FFC9B3);
+}
+
+.contact-chip:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
