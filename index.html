@@ -6,109 +6,111 @@
   <title>CC's Portfolio</title>
   <link rel="stylesheet" href="index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
 </head>
 
 <body>
-  <canvas id="rain-canvas"></canvas>
-  <main class="hero-wrapper">
-    <div class="hero-content">
-      <img src="media/index/ccAvatar.png" alt="Cheryl Chen" class="ccAvatar" />
-      <div class="text-group">
-        <h1 class="name">CHERYL CHEN</h1>
-        <h2 class="titles">
-          <span class="ux-designer">UX Designer</span>
-          <span class="and">&</span>
-          <span class="instructional-designer">Instructional Designer</span>
-        </h2>
-        <p class="personalDescription">
-          Passionate about how people learn and grow. I design inclusive, intuitive products that support wellbeing and learning.
-        </p>
-        <p class="personalDescription">
-          I translate complexity into clarity, and bring a learner’s mindset to solve real user problems with empathy, adaptability, and joy.
-        </p>
-      </div>
-    </div>
-  </main>
-  <script src="index.js"></script>
-</body>
-</html>
+  <div class="orb-container">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
 
-<!-- WORK -->
-<section class="work-section">
-    <h2 class="section-title">WORK</h2>
-    <div class="project-grid">
-      <!-- GREENIE -->
-      <div class="project-card">
-        <a href="greenie.html">
-          <img src="media/index/greenieCover.png" alt="GREENIE Cover" class="project-image" />
-        </a>
-        <a href="greenie.html">
-          <h3 class="project-title">GREENIE</h3>
-        </a>
-        <p class="project-description">
-          An APP supports plant owners in building sustainable care habits and having better access to plant-care learning resources.
-        </p>
-        <p class="project-tags">[ UX Design - Lifestyle ]</p>
-      </div>
-      <!-- CARELAB -->
-      <div class="project-card">
-        <img src="media/index/carelabCover.png" alt="CARELAB COLLECTIVE Cover" class="project-image" />
-        <h3 class="project-title">CARELAB COLLECTIVE</h3>
-        <p class="project-description">
-          Collaborated with CareLab Collective team to build a community platform for neurodivergent children on Circle.
-        </p>
-        <p class="project-tags">[ UX Design - Inclusive · 0 to 1 ]</p>
-      </div>
-      <!-- SLEEP BETTER -->
-      <div class="project-card">
-        <img src="media/index/carelabCover.png" alt="SLEEP BETTER Cover" class="project-image" />
-        <h3 class="project-title">SLEEP BETTER</h3>
-        <p class="project-description">
-          To address the issue of insomnia among young adults, we proposed an instructional solution focused on enhancing sleep quality.
-        </p>
-        <p class="project-tags">[ Instructional Design · Wellness ]</p>
-      </div>
-      <!-- LECO -->
-      <div class="project-card">
-        <img src="media/index/carelabCover.png" alt="LECO Cover" class="project-image" />
-        <h3 class="project-title">LECO</h3>
-        <p class="project-description">
-          An app which makes it possible to learn language while meeting new friends from different cultural backgrounds.
-        </p>
-        <p class="project-tags">[ UX Design ]</p>
-      </div>
-    </div>
-</section>
+  <!-- HERO -->
+  <section class="container hero-wrapper">
+    <img src="media/index/hero.png" alt="CHERYL CHEN, UX designer and instructional designer" class="hero">
+  </section>
 
-<!-- About Me -->
-<section class="about-me-section">
-  <div class="about-container">
-    <div class="about-image-group">
-      <img src="media/index/peruPhoto.jpg" alt="Me in Machu Picchu" class="about-photo" />
+  <!-- WORK -->
+  <section class="container work">
+      <h2 class="workTitle">WORK</h2>
+      <div class="project-grid">
+        <!-- GREENIE -->
+        <div class="project-card">
+          <a href="greenie.html">
+            <img src="media/index/greenieCover.png" alt="GREENIE Cover" class="project-image" />
+          </a>
+          <h3>
+            <a href="greenie.html" class="project-title">GREENIE</a>
+          </h3>
+          <p class="project-description">
+            An APP supports plant owners in building sustainable care habits and having better access to plant-care learning resources.
+          </p>
+          <p class="project-tags">[ UX Design - Lifestyle ]</p>
+        </div>
+        <!-- CARELAB -->
+        <div class="project-card">
+          <a href="carelab.html">
+            <img src="media/index/carelabCover.png" alt="CareLab Cover" class="project-image" />
+          </a>
+          <h3>
+            <a href="carelab.html" class="project-title">CARELAB COLLECTIVE</a>
+          </h3>
+          <p class="project-description">
+            Collaborated with CareLab Collective team to build a community platform for neurodivergent children on Circle.
+          </p>
+          <p class="project-tags">[ UX Design - Inclusive · 0 to 1 ]</p>
+        </div>
+        <!-- SLEEP BETTER -->
+        <div class="project-card">
+          <a href="sleepBetter.html">
+            <img src="media/index/SBCover.png" alt="SleepBetter Cover" class="project-image" />
+          </a>
+          <h3>
+            <a href="sleepBetter.html" class="project-title">SLEEPBETTER</a>
+          </h3>
+          <p class="project-description">
+            To address the issue of insomnia among young adults, we proposed an instructional solution focused on enhancing sleep quality.
+          </p>
+          <p class="project-tags">[ Instructional Design · Wellness ]</p>
+        </div>
+        <!-- LECO -->
+        <div class="project-card">
+          <img src="media/index/SBCover.png" alt="SleepBetter Cover" class="project-image" />
+          <h3 class="project-title">LECO</h3>
+          <p class="project-description">
+            An app which makes it possible to learn language while meeting new friends from different cultural backgrounds.
+          </p>
+          <p class="project-tags">[ UX Design ]</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="container about-me-section">
+    <div class="aboutLeft">
+      <h2 class="aboutMeTitle">ABOUT ME</h2>
+      <h3 class="NY">NEW YORK</h3>
+      <p class="p1">I majored in English during undergraduate. Language learning and linguistics are fun. What is the most valuable part about this experience is that it inspired me to pay attention to how people learn (in a general way) and think about how to facilitate this process.</p>
+      <p class="p1">I have a Master’s degree in Learning Technology and Experience Design at New York University. I have very valuable opportunities to do internships and collaborate with real clients, which honed my UX skills. I also tried to do some front-end code at that time. It turns out I love it. I’m still continuously learning!</p>
+      <p class="p1">Personally, I have a passion for nature and enjoy exploring the world. I care about people’s wellbeing and would like to bring a bit of empathy, fun and joy to the world. Hopefully I promote these ideas in my designs.</p>
+    </div>
+    <div class="aboutRight">
+      <img src="media/index/peruPhoto.jpg" alt="Me in Machu Picchu" class="myPhoto" />
       <p class="photo-caption">A photo taken in Machu Picchu, Peru.</p>
     </div>
-    <div class="about-text">
-      <h2 class="section-title">ABOUT ME</h2>
-      <p>I majored in English during undergraduate. Language learning and linguistics are pretty fun to me.</p>
-      <p>I’m also a tech lover. I play a lot of video games. And one of my dreams is to master frontend coding.</p>
-      <p>In 2023, I came to New York to pursue my Master’s degree in Learning Technology and Experience Design at NYU.</p>
-      <p>I love nature, plants, animals (especially cats) and enjoy exploring the world. I want to bring a bit of empathy, fun and joy to the world.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Connect -->
-<section class="contact-section">
-  <div class="contact-container">
+  <!-- Connect -->
+  <section class="container contact">
     <div class="contact-header">
-      <h2 class="section-title">CONTACT</h2>
+      <h2 class="contactTitle">CONTACT</h2>
       <p class="contact-subtitle">Feel free to reach out :)</p>
     </div>
-    
     <div class="contact-buttons">
       <a href="mailto:cheryl.yx.chen@outlook.com" class="contact-chip email">cheryl.yx.chen@outlook.com</a>
       <a href="tel:+19292920157" class="contact-chip phone">+1 929-292-0157</a>
       <a href="https://www.linkedin.com/in/yuxingchen86/" target="_blank" rel="noopener noreferrer" class="contact-chip linkedin">LinkedIn</a>
     </div>
-  </div>
-</section>
+  </section>
+
+  <script>
+    document.addEventListener("mousemove", (e) => {
+      const percentX = e.clientX / window.innerWidth; 
+      // 把鼠标位置映射到 -20deg ~ 20deg 的范围
+      const shift = (percentX - 0.5) * 40; 
+      document.documentElement.style.setProperty("--shift", `${shift}deg`);
+    });
+  </script>
+
+</body>
+</html>
