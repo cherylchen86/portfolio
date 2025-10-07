@@ -6,103 +6,106 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
-#rain-canvas {
-  position: fixed;
+/* background animation*/
+/* 光球容器 */
+.orb-container {
+  position: fixed;   /* 关键修改 */
   top: 0;
   left: 0;
-  z-index: -1;
   width: 100%;
   height: 100%;
   pointer-events: none;
+  z-index: -1;
+}
+
+/* 光球的基础样式 */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  will-change: transform, opacity;
+  filter: blur(80px); 
+}
+
+/* 第一个光球 */
+.orb-1 {
+  width: 40rem;
+  height: 40rem;
+  top: 10%;
+  left: 10%;
+  background: linear-gradient(var(--shift, 90deg), #5DADEC, #7AB5B0);
+  animation-name: moveOrb1;
+  animation-duration: 45s;
+}
+
+@keyframes moveOrb1 {
+  0% { transform: translate(0, 0); }
+  30% { transform: translate(calc(100vw - 600px), calc(100vh - 600px)); }
+  60% { transform: translate(calc(100vw - 800px), 100px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* 第二个光球 */
+.orb-2 {
+  width: 50rem;
+  height: 50rem;
+  bottom: 15%;
+  right: 15%;
+  background: linear-gradient(var(--shift, 90deg), #C6C8EE, #FFC9B3);
+  animation-name: moveOrb2;
+  animation-duration: 50s;
+  animation-delay: -5s;
+}
+
+@keyframes moveOrb2 {
+  0%   { transform: translate(0, 0); }
+  40%  { transform: translate(calc(-50vw + 300px), calc(-50vh + 300px)); }
+  70%  { transform: translate(calc(-50vw + 400px), -80px); }
+  100% { transform: translate(0, 0); }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* body */
+.container {
+  width: 85vw;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .hero-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-}
-
-.hero-content {
   display: flex;
-  align-items: center;
-  max-width: 1086px;
-  width: 84.8%; /* 1086 / 1280 = 0.848 */
-  padding-left: 7.6%; /* 97 / 1280 ≈ 0.076 */
-  box-sizing: border-box;
-  flex-wrap: wrap;
 }
 
-.ccAvatar {
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 40px;
-  align-self: center;
-   transform: translateY(-15px);
-}
-
-.text-group {
-  max-width: 700px;
-  flex: 1;
-}
-
-.name {
-  font-size: 52px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.titles {
-  font-size: 30px;
-  font-weight: 400;
-  margin: 10px 0;
-}
-
-.ux-designer {
-  background: linear-gradient(to right, #F8C461, #FB84A7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.instructional-designer {
-  background: linear-gradient(to right, #5DADEC, #7AB5B0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.and {
-  color: #333;
-  margin: 0 6px;
-}
-
-.personalDescription {
-  font-size: 24px;
-  font-weight: 400;
-  margin-top: 15px;
-  line-height: 1.4;
-  color: #45423D;
-  margin-bottom: 1em;
+.hero {
+  margin: auto;
+  width: 100%;
 }
 
 /*WORK*/
-.work-section {
-  padding: 80px 97px;
-  box-sizing: border-box;
+.work {
   color: #45423D;
-  margin-top: -40px;
+  margin-top: 2rem;
 }
 
-.section-title {
+.workTitle {
   font-size: 52px;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 1rem;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(510px, 1fr));
-  gap: 60px 40px;
+  gap: 60px 30px;
 }
 
 /*容器*/
@@ -118,11 +121,17 @@ body, html {
   max-width: 100%;
 }
 
-/*All work titles*/
-.project-title {
-  font-size: 26px;
+a.project-title {
+  font-size: 30px;
   font-weight: 500;
   margin: 18px 0 6px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.project-title:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*All descriptions*/
@@ -130,7 +139,7 @@ body, html {
   font-size: 17px;
   font-weight: 350;
   line-height: 1.4;
-  margin: 0 0 16px 0;
+  margin: -0.5rem 0 16px 0;
 }
 
 /*All tags*/
@@ -141,70 +150,69 @@ body, html {
   margin: 0;
 }
 
-/*About Me Section*/
+/*About Me*/
 .about-me-section {
-  padding: 80px 97px;
-  box-sizing: border-box;
-  background-color: #fff;
   color: #45423D;
-}
-
-.about-container {
+  margin-top: 10rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* 图片和文字顶对齐 */
-  gap: 60px;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
-.about-image-group {
+.aboutLeft {
+  max-width: 60%;
+  height: 100%;
+}
+
+.aboutMeTitle {
+  font-size: 52px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.NY {
+  color:#817F7D;
+  font-size: 18px;
+  font-weight: 350;
+  margin-top: -2.2rem;
+  margin-bottom: 2rem;
+}
+
+.p1 {
+  font-size: 18px;
+}
+
+.aboutRight {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  max-width: 50%;
+  max-width: 30%;
+  height: 100%;
 }
 
-.about-photo {
-  width: 80%;
+.myPhoto {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  display: block;
+  border-radius: 2%;
 }
 
 .photo-caption {
   font-size: 14px;
-  color: #888;
+  color: #696969;
   margin-top: 8px;
   text-align: left;
 }
 
-.about-text {
-  flex: 1;
-  max-width: 50%;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1;
-  color: #45423D;
-  margin-bottom: 20px;
-}
-
-.about-text .section-title {
-  margin-top: 0;
-}
-
-.about-text p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 /* CONTACT */
-.contact-section {
-  padding: 80px 97px;
-  background-color: #fdfdfd;
-  text-align: left;
+.contact {
+  color: #45423D;
+  margin-top: 8rem;
 }
 
-.contact-container {
-  margin: 0 auto;
+.contactTitle {
+  font-size: 52px;
+  font-weight: 400;
+  margin-top: 0;
 }
 
 .contact-header {
@@ -224,34 +232,25 @@ body, html {
 .contact-buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  gap: 30px;
+  margin-top: -1rem;
+  gap: 3rem;
+  padding-bottom: 8rem;
 }
 
 .contact-chip {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 999px;
-  font-size: 22px;
-  color: white;
+  font-size: 20px;
+  color: inherit;
   text-decoration: none;
   font-weight: 400;
   transition: all 0.3s ease;
-}
-
-.contact-chip.email {
-  background: linear-gradient(to right, #FFA939, #FB84A7);
-}
-
-.contact-chip.phone {
-  background: linear-gradient(to right, #5DADEC, #7AB5B0);
-}
-
-.contact-chip.linkedin {
-  background: linear-gradient(to right, #C6C8EE, #FFC9B3);
+  border:2px solid #45423D;
 }
 
 .contact-chip:hover {
-  opacity: 0.85;
   transform: translateY(-2px);
+  background-color: #45423D;
+  color:#FFFFFF;
 }
