@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #222;
-  background-color: #fff;
+  background-color: #FAFAFA;
 }
 
 /* MENU */
@@ -55,28 +55,28 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
   font-weight: 600;  /* semibold */
-  color: #45423D;
+  color: #373737;
 }
 
 .title {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: 500;  /* medium */
-  color: #45423D;
+  color: #373737;
 }
 
 .highlight {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 500;  /* medium */
-  color: #07442D;
+  color: #73B2C3;
 }
 
 .para {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;  /* regular */
-  color: #45423D;
+  color: #373737;
   line-height: 1.5;
 }
 
@@ -88,22 +88,21 @@ body {
 }
 
 /* 通用区块 */
-.section {
+.overview {
   padding: 60px 0;
 }
 
 .divider {
-  width: 84vw;            /* 宽度略大于 container（950） */
-  max-width: calc(100% - 96px); /* 防止在小屏下溢出 */
+  width: 84vw;
+  max-width: calc(100% - 96px);
   height: 1px;
   background-color: #606060;
-  margin: 40px auto;        /* 垂直间距 & 居中 */
+  margin: 40px auto;
 }
 
-/* Hero */
+/* Hero 图像 */
 .hero-section {
   width: 100%;
-  background-color: #f0f8f4; /* 可选背景色，或替换为 background-image */
 }
 
 .hero-img {
@@ -112,18 +111,11 @@ body {
   height: auto;
 }
 
-/* 全宽纯色区块 */
-.full-width-section {
-  width: 100%;
-  background-color: #f8f9f5;
-  padding: 40px 0;
-}
-
-/* OVERVIEW */
+/* Overview */
 .overview-layout {
   display: flex;
   justify-content: space-between;
-  gap: 60px; /* 可调整 */
+  gap: 120px; /* 可调整 */
   align-items: flex-start;
   flex-wrap: wrap; /* 保证在小屏时可以换行 */
 }
@@ -139,231 +131,177 @@ body {
   gap: 40px;
 }
 
-.right-block .para {
-  font-size: 18px;
+/* afterOverview divider */
+.afterOverview {
+    margin-top: 0px;
 }
 
-/* Context */
-.context-section {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-top: -20px;
-}
-
-.problem-cards {
-  display: flex;
-  justify-content: space-between; /* 把第一张推左边，最后一张推右边 */
-  align-items: flex-start;
-  gap: 0; /* gap 不控制它们之间的间距 */
-  flex-wrap: nowrap;
-}
-
-.problem-cards img {
-  width: calc((100% - 48px) / 3); /* 计算剩下三张图的宽度（假设两边间距为 24px*2） */
-  height: auto;
-  display: block;
-}
-
-/* HMW */
-.design-question {
-  width: 100%;
-  background-color: #07442D;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.emoji-img {
-  width: 10vw;
-  height: 10vh;
-  object-fit: contain;
-}
-
-.white-text {
-  color: #fff;
-}
-
-/* Audience */
-.audience-section {
-  padding-top: 90px;
-}
-
-.audienceDesc {
+/* Before We Started */
+.ourclient {
   margin-top: 30px;
 }
 
-.user-needs-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 32px;
-  align-items: center;
+.clientdesc {
+  margin-top: 10px;
 }
 
-.needs-left {
-  flex: 1 1 50%;
+.theproblem {
+  margin-top: 40px;
 }
 
-.userneedstitle {
-  margin-top: 30px;
+.p100 {
+  margin-top: 10px;
 }
 
-.needs-image {
-  width: 100%;
-  height: auto;
-  display: block;
+.u101 {
+  list-style: none;
+}
+
+.u101 li {
+  position: relative;
+  padding-left: 1em;
   margin-top: 5px;
 }
 
-.needs-text {
-  flex: 1 1 40%;
+.u101 li::before {
+  content: "• ";
+  left: 0;
+  color: #73B2C3;
+}
+
+.p102 {
+  margin-top: 10px;
+}
+
+/* our mission */
+.mission {
+  margin-top: 40px;
+}
+
+.p104 {
+  margin-top: 10px;
+}
+
+.u103 {
+  list-style: none;
+}
+
+.u103 li {
+  position: relative;
+  padding-left: 1em;
+  margin-top: 5px;
+}
+
+.u103 li::before {
+  content: "• ";
+  left: 0;
+  color: #373737;
+}
+
+/* project plan & goals*/
+.h105 {
+  margin-top: 40px;
+}
+
+.ppngoals {
+  width: 100%;
   margin-top: 25px;
 }
 
-.needs-summary {
-  padding-left: 1.5em;
+/* stage 1*/
+.h106 {
+  margin-bottom: -10px;
+}
+
+.p107 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.h108 {
+  margin-top: 40px;
+}
+
+.affinitymap {
+  width: 100%;
   margin-top: 15px;
 }
 
-.needs-summary li {
-  margin-bottom: 15px;
-}
-
-.needs-summary li::marker {
-  color: #FFA939;
-}
-
-/* USER JOURNEY MAP*/
-.UJMtitle {
-  margin-top: 70px;
-}
-
-.UJMpara {
-  margin-top: 15px;
-}
-
-.top-gap {
-  display: inline-block;
-  margin-top: 5px;
-}
-
-.journey-map-img {
-  margin-top: 32px;
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #ccc;
-}
-
-.afteraudiencedivider{
-  margin-top: 80px;
-}
-
-/* LANDSCAPE AUDITS*/
-.landscape-section {
-  margin-top: 80px;
-}
-
-.LAtitle {
-  margin-bottom: 30px;
-}
-
-.landscape-para {
-  margin-top: 16px;
-}
-
-.bullet-orange {
-  list-style: disc;
-  padding-left: 1.5em; /* 留出 marker 空间 */
-  margin-top: 24px; /* 可按需调整与上方间距 */
-}
-
-.bullet-orange li {
-  margin-bottom: 15px;
-}
-
-.bullet-orange li::marker {
-  color: #FFA939;
-}
-
-.afterLAdivider {
-  margin-top: 60px;
-}
-
-/* Design Process */
-.DesignProcess {
-  margin-top: 20px;
-}
-
-.section-title {
-  margin-bottom: 8px;
-}
-
-.sub-title {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.lofi-image {
-  width: 100%;          /* 填满 container */
-  height: auto;         /* 保持长宽比 */
-  display: block;
-}
-
-.UBTESTtitle {
-  margin-top: 60px;
-  margin-bottom: 25px;
-}
-
-.UBTEST {
-  width: 100%;          /* 填满 container */
-  height: auto;         /* 保持长宽比 */
-  display: block; 
-}
-
-.iterations {
-  margin-top: 70px;
-  width: 100%; 
-  height: auto;
-  display: block;
-}
-
-/* Divider */
-.afterDesignProcessDivider {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-
-/* FINAL DESIGN */
-.FinalDesign {
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
-.greenieInterface {
-  width: 100%;
+.h109 {
   margin-top: 50px;
 }
 
-.tryThePrototype {
-  width:100%;
-}
-
-/* REFLECTION */
-.RFpara1 {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.RFpara2 {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-/* COMMENTS */
-.commentcards {
-  margin-top: 20px;
+.visualization1 {
   width: 100%;
+  margin-top: 30px;
+}
+
+.visualization2 {
+  width: 100%;
+}
+
+.hwm {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.h110 {
+  margin-top: 40px;
+}
+
+.p111 {
+  margin-top: 15px;
+}
+
+.personas {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* stage 2 */
+.h112 {
+  margin-bottom: -10px;
+}
+
+.h113 {
+  margin-top: 40px;
+}
+
+.p114 {
+  margin-top: 10px;
+}
+
+.table1 {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.h115 {
+  margin-top: 40px;
+}
+
+.solutiongeneration {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.h116 {
+  margin-top: 40px;
+}
+
+.p117 {
+  margin-top: 10px;
+}
+
+.finaldesign {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Comments */
+.commentCards {
+  width: 100%;
+  margin-top: 30px;
 }
 
 /* Footer */
